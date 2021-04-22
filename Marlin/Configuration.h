@@ -512,9 +512,9 @@
     #define DEFAULT_Kd_LIST {  78.81,  78.81 }
   #else
     // Ender 3 v2
-    #define DEFAULT_Kp  16.20
-    #define DEFAULT_Ki  1.08
-    #define DEFAULT_Kd  60.69
+    #define DEFAULT_Kp  16.47
+    #define DEFAULT_Ki  1.03
+    #define DEFAULT_Kd  65.99
   #endif
 #endif // PIDTEMP
 
@@ -552,9 +552,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   // Ender 3 V2
-  #define DEFAULT_bedKp 26.48
-  #define DEFAULT_bedKi 2.13
-  #define DEFAULT_bedKd 219.34
+  #define DEFAULT_bedKp 26.74
+  #define DEFAULT_bedKi 1.95
+  #define DEFAULT_bedKd 244.31
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -800,7 +800,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 98.34 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1056,7 +1056,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -43.5, -8.1, -2.3 }
+#define NOZZLE_TO_PROBE_OFFSET { -43.5, -8.1, -2.28 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1240,7 +1240,7 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS X_BED_SIZE
+#define X_MAX_POS X_BED_SIZE + 15
 #define Y_MAX_POS Y_BED_SIZE
 #define Z_MAX_POS 250
 
